@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login Page</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+
+  <script src="login.js"></script>
+
+<div class="loginScreen">
+  <h2 class="loginScreen">Login</h2>
+  <form class="loginScreen" id="loginForm">
+
+    <label class="loginScreen" for="username">Username:</label>
+    <input class="loginScreen" type="text" id="username" name="username" required>
+
+    <label class="loginScreen" for="password">Password:</label>
+    <input class="loginScreen" type="password" id="password" name="password" required>
+
+    <button class="loginScreen" type="button" onclick="login()">Login</button>
+  </form>
+</div>
+
+<div id="toast">
+  <span id="toastText"></span>
+</div>
+
+<div class="id-card-holder">
+  <div class="id-card">
+    <div class="header">
+      <img src="Diamond/logo_colorida.png">
+    </div>
+
+    <div class="photo">
+      <img id="perfil">
+    </div>
+
+    <div class="user">
+      <span id="Nome" data-label="Nome: "></span>
+      <span id="ID" data-label="ID: "></span>
+  </div>
+
+  <div class="userInfo">
+      <span id="Endereço" data-label="Endereço:"></span>
+      <span id="Altura" data-label="Altura:"></span>
+      <span id="Peso" data-label="Peso:"></span>
+      <span id="Genero" data-label="Gênero:"></span>
+      <span id="Cabelo" data-label="Cabelo:"></span>
+      <span id="Olhos" data-label="Olhos:"></span>
+  </div>
+</div>
+</div>
+</body>
+</html>
